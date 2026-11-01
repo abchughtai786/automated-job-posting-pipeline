@@ -1,0 +1,5 @@
+{
+  "_note": "Example site settings. City and company names are fictional.",
+  "cities": ["City A", "City B", "City C"],
+  "brands": ["Northwind Telecom", "Kitebrook Bank", "Saffron Hill Foods"]
+}

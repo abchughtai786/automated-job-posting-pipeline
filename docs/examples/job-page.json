@@ -1,0 +1,23 @@
+{
+  "id": 1005,
+  "status": "publish",
+  "link": "https://jobs.example.com/job/sales-trainee-at-riverbend-textiles-city-a-country-a/",
+  "title": "Sales Trainee at Riverbend Textiles - City A, Country A",
+  "company": "Riverbend Textiles",
+  "location": "District 4, City A, Country A",
+  "applyUrl": "https://jobboard.example/jobs/sales-trainee-riverbend-textiles",
+  "jobTypes": [
+    "entry-level",
+    "full-time"
+  ],
+  "category": "local",
+  "deadline": null,
+  "focusKeyphrase": "sales trainee city a",
+  "relatedKeyphrases": [
+    "Sales Trainee jobs City A",
+    "Riverbend Textiles careers",
+    "entry level jobs City A"
+  ],
+  "metaDescription": "Riverbend Textiles is hiring a Sales Trainee in City A. Read the requirements and apply directly through the employer's official link.",
+  "contentBy": "mock (offline heuristics)"
+}

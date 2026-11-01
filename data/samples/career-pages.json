@@ -1,0 +1,62 @@
+{
+  "_note": "Synthetic data. All companies, people, links and emails are fictional. 'now-3h' dates are resolved at run time.",
+  "sources": [
+    {
+      "id": "northwind-careers",
+      "company": "Northwind Telecom",
+      "jobs": [
+        {
+          "title": "Graduate Trainee - Network Operations",
+          "location": "City A, Country A",
+          "applyUrl": "https://careers.northwind.example/jobs/1042",
+          "postedAt": "now-3h",
+          "description": "Northwind Telecom is looking for fresh engineering graduates to join its Network Operations Centre in City A.\n\nResponsibilities:\n- Monitor network performance dashboards and raise incidents\n- Support field teams during scheduled maintenance windows\n- Prepare daily availability reports for the operations lead\n\nRequirements:\n- BS in Electrical, Telecom or Computer Engineering (2025 or 2026 graduates)\n- Basic understanding of TCP/IP networking\n- Willingness to work rotating shifts\n\nThe programme runs for twelve months with structured training and mentoring."
+        },
+        {
+          "title": "Senior Network Engineer",
+          "location": "City A, Country A",
+          "applyUrl": "https://careers.northwind.example/jobs/1043",
+          "description": "Eight or more years of experience in core network design."
+        },
+        {
+          "title": "Software Engineering Intern (Paid)",
+          "location": "City B, Country A",
+          "applyUrl": "https://careers.northwind.example/jobs/1051",
+          "postedAt": "now-30h",
+          "description": "Join the billing platform team for a three-month paid internship.\n\nWhat you will do:\n- Write and test backend services in Node.js\n- Fix bugs reported by the customer care tools team\n- Take part in code reviews and daily stand-ups\n\nWho should apply:\n- Final-year or recently graduated Computer Science students\n- Comfortable with JavaScript and Git\n\nA monthly stipend is provided and strong interns may receive a full-time offer."
+        }
+      ]
+    },
+    {
+      "id": "kitebrook-bank-careers",
+      "company": "Kitebrook Bank",
+      "jobs": [
+        {
+          "title": "Management Trainee Officer",
+          "location": "City C, Country A",
+          "applyUrl": "https://careers.kitebrookbank.example/mto-2027",
+          "postedAt": "now-50h",
+          "description": "Kitebrook Bank invites applications for its 2027 Management Trainee Officer programme in City C.\n\nProgramme:\n- Eighteen months of rotations across retail banking, operations and risk\n- Classroom training followed by on-the-job assignments\n\nEligibility:\n- Sixteen years of education with at least a 3.0 CGPA\n- Age 26 or below at the closing date\n\nShortlisted candidates will be invited to an online assessment."
+        },
+        {
+          "title": "Branch Manager",
+          "location": "City B, Country A",
+          "applyUrl": "https://careers.kitebrookbank.example/bm-77",
+          "description": "Lead a retail branch team."
+        }
+      ]
+    },
+    {
+      "id": "lumen-byte-careers",
+      "company": "Lumen Byte Labs",
+      "jobs": [
+        {
+          "title": "Frontend Developer Intern",
+          "location": "City B, Country A",
+          "applyUrl": "https://lumenbyte.example/careers/frontend-intern",
+          "description": ""
+        }
+      ]
+    }
+  ]
+}

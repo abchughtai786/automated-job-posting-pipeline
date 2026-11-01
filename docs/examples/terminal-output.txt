@@ -1,0 +1,31 @@
+Mode:        DEMO (nothing is published)
+AI:          mock (offline heuristics)
+Publisher:   mock WordPress (writes to output/posts)
+Indexer:     mock indexer (writes output/indexing-requests.json)
+
+screen: rejected "Data Entry Intern (Work From Home)" (Rapid Earn Online) -- scam signs (fees, bank/ID details or similar)
+screen: rejected "Office Assistant Intern" (Quickhire) -- description is just an apply-contact stub
+screen: rejected "Data Analyst Intern" (Meadowfield Analytics) -- mock screener: failed looksComplete
+screen: rejected "Content Writing Intern" (Harborline Digital) -- mock screener: failed countryEligible
+screen: rejected "Business Development Intern" (Confidential Recruiter) -- mock screener: failed realCompany
+run: collected 9 jobs, 9 not seen before
+publish: "Software Engineering Intern (Paid) at Northwind Telecom - City B, Country A" -> https://jobs.example.com/job/software-engineering-intern-paid-at-northwind-telecom-city-b-country-a/ (score 13)
+publish: "Graduate Trainee - Network Operations at Northwind Telecom - City A, Country A" -> https://jobs.example.com/job/graduate-trainee-network-operations-at-northwind-telecom-city-a-country-a/ (score 10)
+publish: "Marketing Intern at Saffron Hill Foods - City A, Country A" -> https://jobs.example.com/job/marketing-intern-at-saffron-hill-foods-city-a-country-a/ (score 10)
+publish: "Management Trainee Officer at Kitebrook Bank - City C, Country A" -> https://jobs.example.com/job/management-trainee-officer-at-kitebrook-bank-city-c-country-a/ (score 8)
+dedup: skipped "Graduate Trainee Network Operations City A" (Northwind Telecom Pvt Ltd) -- fuzzy title match
+publish: failed "Frontend Developer Intern" (Lumen Byte Labs), attempt 1: skipped -- no description available from source
+publish: "Software Developer Intern at Kestrelway Logistics - City C, Country A" -> https://jobs.example.com/job/software-developer-intern-at-kestrelway-logistics-city-c-country-a/ (score 5)
+publish: "Sales Trainee at Riverbend Textiles - City A, Country A" -> https://jobs.example.com/job/sales-trainee-at-riverbend-textiles-city-a-country-a/ (score 3)
+publish: "Graduate Engineer Trainee at Harbor Example Engineering - City D, Country B" -> https://jobs.example.com/job/graduate-engineer-trainee-at-harbor-example-engineering-city-d-country-b/ (score 3)
+run: published 7 this run, 7/20 today
+
+Summary
+  Collected:      9 candidates passed collection filters and screening (9 not seen before)
+  Screening:      2 rejected by rules, 3 rejected by AI, 5 passed, 0 from cache
+  AI problems:    0 held back for retry, 0 sent to manual review (0 in queue)
+  Published:      7 this run (7/20 today)
+  Duplicates:     1 skipped
+  Failed:         1
+  Network guard:  0 request(s) blocked
+  Output:         output/posts/, indexing-requests.json, run-report.json

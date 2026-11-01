@@ -1,0 +1,163 @@
+{
+  "collected": 9,
+  "unseen": 9,
+  "published": [
+    {
+      "title": "Software Engineering Intern (Paid) at Northwind Telecom - City B, Country A",
+      "company": "Northwind Telecom",
+      "link": "https://jobs.example.com/job/software-engineering-intern-paid-at-northwind-telecom-city-b-country-a/",
+      "source": "career-page:northwind-careers",
+      "score": 13,
+      "reasons": [
+        "+3 paid",
+        "+2 high-demand field",
+        "+5 well-known employer",
+        "+3 no City B post yet today"
+      ],
+      "city": "City B",
+      "jobTypes": [
+        "entry-level",
+        "internship",
+        "full-time"
+      ],
+      "indexed": true,
+      "contentBy": "mock (offline heuristics)"
+    },
+    {
+      "title": "Graduate Trainee - Network Operations at Northwind Telecom - City A, Country A",
+      "company": "Northwind Telecom",
+      "link": "https://jobs.example.com/job/graduate-trainee-network-operations-at-northwind-telecom-city-a-country-a/",
+      "source": "career-page:northwind-careers",
+      "score": 10,
+      "reasons": [
+        "+5 well-known employer",
+        "+2 posted in last 24h",
+        "+3 no City A post yet today"
+      ],
+      "city": "City A",
+      "jobTypes": [
+        "full-time"
+      ],
+      "indexed": true,
+      "contentBy": "mock (offline heuristics)"
+    },
+    {
+      "title": "Marketing Intern at Saffron Hill Foods - City A, Country A",
+      "company": "Saffron Hill Foods",
+      "link": "https://jobs.example.com/job/marketing-intern-at-saffron-hill-foods-city-a-country-a/",
+      "source": "rss:job-board",
+      "score": 10,
+      "reasons": [
+        "+2 high-demand field",
+        "+5 well-known employer",
+        "+3 no City A post yet today"
+      ],
+      "city": "City A",
+      "jobTypes": [
+        "internship",
+        "full-time"
+      ],
+      "indexed": true,
+      "contentBy": "mock (offline heuristics)"
+    },
+    {
+      "title": "Management Trainee Officer at Kitebrook Bank - City C, Country A",
+      "company": "Kitebrook Bank",
+      "link": "https://jobs.example.com/job/management-trainee-officer-at-kitebrook-bank-city-c-country-a/",
+      "source": "career-page:kitebrook-bank-careers",
+      "score": 8,
+      "reasons": [
+        "+5 well-known employer",
+        "+3 no City C post yet today"
+      ],
+      "city": "City C",
+      "jobTypes": [
+        "entry-level",
+        "executive",
+        "full-time"
+      ],
+      "indexed": true,
+      "contentBy": "mock (offline heuristics)"
+    },
+    {
+      "title": "Software Developer Intern at Kestrelway Logistics - City C, Country A",
+      "company": "Kestrelway Logistics",
+      "link": "https://jobs.example.com/job/software-developer-intern-at-kestrelway-logistics-city-c-country-a/",
+      "source": "rss:job-board",
+      "score": 5,
+      "reasons": [
+        "+2 high-demand field",
+        "+3 no City C post yet today"
+      ],
+      "city": "City C",
+      "jobTypes": [
+        "entry-level",
+        "internship",
+        "full-time"
+      ],
+      "indexed": true,
+      "contentBy": "mock (offline heuristics)"
+    },
+    {
+      "title": "Sales Trainee at Riverbend Textiles - City A, Country A",
+      "company": "Riverbend Textiles",
+      "link": "https://jobs.example.com/job/sales-trainee-at-riverbend-textiles-city-a-country-a/",
+      "source": "rss:job-board",
+      "score": 3,
+      "reasons": [
+        "+3 no City A post yet today"
+      ],
+      "city": "City A",
+      "jobTypes": [
+        "entry-level",
+        "full-time"
+      ],
+      "indexed": true,
+      "contentBy": "mock (offline heuristics)"
+    },
+    {
+      "title": "Graduate Engineer Trainee at Harbor Example Engineering - City D, Country B",
+      "company": "Harbor Example Engineering",
+      "link": "https://jobs.example.com/job/graduate-engineer-trainee-at-harbor-example-engineering-city-d-country-b/",
+      "source": "rss:job-board",
+      "score": 3,
+      "reasons": [
+        "+3 no City D post yet today"
+      ],
+      "city": "City D",
+      "jobTypes": [
+        "entry-level",
+        "full-time"
+      ],
+      "indexed": true,
+      "contentBy": "mock (offline heuristics)"
+    }
+  ],
+  "skipped": [
+    {
+      "title": "Graduate Trainee Network Operations City A",
+      "company": "Northwind Telecom Pvt Ltd",
+      "reason": "duplicate (fuzzy title match)"
+    }
+  ],
+  "failed": [
+    {
+      "title": "Frontend Developer Intern",
+      "company": "Lumen Byte Labs",
+      "error": "skipped -- no description available from source",
+      "attempt": 1
+    }
+  ],
+  "stuck": [],
+  "screening": {
+    "ruleRejected": 2,
+    "aiRejected": 3,
+    "aiPassed": 5,
+    "cached": 0,
+    "heldBack": 0,
+    "aiErrors": 0,
+    "sentToReview": 0
+  },
+  "manualReviewQueue": [],
+  "dailyCount": "7/20"
+}

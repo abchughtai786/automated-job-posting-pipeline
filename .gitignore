@@ -1,0 +1,29 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*-key.json
+service-account*.json
+config/site.json
+
+# Local sessions and private data (never commit)
+auth_info/
+sessions/
+data/*
+!data/samples/
+
+# Runtime state, output and logs
+.demo-state/
+output/
+logs/
+*.log
+
+# Backups and editor leftovers
+*.bak
+*.bak-*
+*.orig
+*.tmp
+.DS_Store
+
+node_modules/

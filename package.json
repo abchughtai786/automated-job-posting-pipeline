@@ -1,0 +1,16 @@
+{
+  "name": "automated-job-posting-pipeline",
+  "version": "1.0.0",
+  "description": "Demonstration of an automated job collection, screening, de-duplication, publishing and distribution pipeline, running offline on synthetic data.",
+  "main": "src/pipeline.js",
+  "bin": { "job-pipeline": "src/cli.js" },
+  "scripts": {
+    "demo": "node src/cli.js run",
+    "demo:reset": "node src/cli.js reset",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "engines": { "node": ">=22" },
+  "keywords": ["automation", "job-board", "wordpress", "llm", "groq", "pipeline"],
+  "license": "UNLICENSED",
+  "private": true
+}

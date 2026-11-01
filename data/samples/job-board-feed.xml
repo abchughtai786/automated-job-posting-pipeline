@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetic job-board RSS feed. All companies, places and links are fictional. -->
+<rss version="2.0">
+  <channel>
+    <title>Example Job Board</title>
+    <item>
+      <title>Marketing Intern</title>
+      <company>Saffron Hill Foods</company>
+      <location>City A, Country A</location>
+      <link>https://jobboard.example/jobs/marketing-intern-saffron-hill-foods</link>
+      <description><![CDATA[<p>Saffron Hill Foods is hiring a Marketing Intern for its snacks brand team in City A.</p><p>You will help plan social media campaigns, collect retail feedback, and prepare weekly brand performance summaries for the brand manager.</p><p>Final-year business or marketing students who can commit to three months are encouraged to apply through the link.</p>]]></description>
+    </item>
+    <item>
+      <title>Sales Trainee</title>
+      <company>Riverbend Textiles</company>
+      <location>District 4, City A, Country A</location>
+      <link>https://jobboard.example/jobs/sales-trainee-riverbend-textiles</link>
+      <description><![CDATA[Riverbend Textiles is looking for energetic fresh graduates to join the export sales team.
+
+Responsibilities:
+- Follow up with international buyers by email and phone
+- Prepare price quotations and sample dispatch records
+- Maintain the customer database in the CRM
+
+Requirements:
+- A bachelor's degree in any discipline
+- Good written English
+
+Apply through the link with your CV and a short cover note.]]></description>
+    </item>
+    <item>
+      <title>Graduate Engineer Trainee</title>
+      <company>Harbor Example Engineering</company>
+      <location>City D, Country B</location>
+      <link>https://jobboard.example/jobs/graduate-engineer-trainee-harbor-example</link>
+      <description><![CDATA[<p>Harbor Example Engineering is recruiting graduate engineer trainees for site projects in City D.</p><p>Trainees support site engineers with quantity surveys, daily progress reports and safety inspections. Civil and mechanical graduates from any country may apply; accommodation and transport are provided by the employer.</p>]]></description>
+    </item>
+    <item>
+      <title>𝗦𝗼𝗳𝘁𝘄𝗮𝗿𝗲 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 𝗜𝗻𝘁𝗲𝗿𝗻</title>
+      <company>Kestrelway Logistics</company>
+      <location>City C, Country A</location>
+      <link>https://jobboard.example/jobs/software-developer-intern-kestrelway</link>
+      <description><![CDATA[<p>Kestrelway Logistics builds route-planning tools for delivery fleets. Interns work with the platform team on React screens and Node.js APIs, write unit tests and fix issues reported by dispatch staff. Final-year computer science students are welcome.</p>]]></description>
+    </item>
+    <item>
+      <title>Senior Accountant</title>
+      <company>Saffron Hill Foods</company>
+      <location>City B, Country A</location>
+      <link>https://jobboard.example/jobs/senior-accountant</link>
+      <description><![CDATA[<p>Five years of audit experience required.</p>]]></description>
+    </item>
+    <item>
+      <title>Graduate Trainee Network Operations City A</title>
+      <company>Northwind Telecom Pvt Ltd</company>
+      <location>City A, Country A</location>
+      <link>https://jobboard.example/jobs/northwind-noc-graduate</link>
+      <description><![CDATA[<p>Northwind Telecom is hiring fresh graduates for its network operations centre. Monitor dashboards, raise incidents and support field teams on rotating shifts. Engineering graduates of 2025 or 2026 can apply.</p>]]></description>
+    </item>
+    <item>
+      <title>Data Entry Intern (Work From Home)</title>
+      <company>Rapid Earn Online</company>
+      <location>Remote, Country A</location>
+      <link>https://jobboard.example/jobs/data-entry-intern-rapid-earn</link>
+      <description><![CDATA[<p>Students can earn $40 per day from home by copying short documents into online forms. No interview and no experience required.</p><p>Before you start you must pay a processing fee for your training kit and install our monitoring software on your laptop. Places are limited, so apply today.</p>]]></description>
+    </item>
+    <item>
+      <title>Office Assistant Intern</title>
+      <company>Quickhire</company>
+      <location>City B, Country A</location>
+      <link>https://jobboard.example/jobs/office-assistant-intern-quickhire</link>
+      <description><![CDATA[<p>Apply now. Send CV to jobs@quickhire.example</p>]]></description>
+    </item>
+    <item>
+      <title>Data Analyst Intern</title>
+      <company>Meadowfield Analytics</company>
+      <location>City C, Country A</location>
+      <link>https://jobboard.example/jobs/data-analyst-intern-meadowfield</link>
+      <description><![CDATA[<p>Meadowfield Analytics helps retailers understand customer demand. Interns clean sales datasets, build weekly dashboards and present findings to account managers. We want curious students who know Excel and some SQL and can join for at least three months. About the role We are</p>]]></description>
+    </item>
+    <item>
+      <title>Content Writing Intern</title>
+      <company>Harborline Digital</company>
+      <location>City B, Country A</location>
+      <link>https://jobboard.example/jobs/content-writing-intern-harborline</link>
+      <description><![CDATA[<p>Harborline Digital is a content agency serving retail clients. Interns write product descriptions, blog drafts and social captions under an editor's guidance. Applicants must be based in the UK and hold the right to work there; the internship is fully remote but limited to UK residents.</p>]]></description>
+    </item>
+    <item>
+      <title>Business Development Intern</title>
+      <company>Confidential Recruiter</company>
+      <location>City A, Country A</location>
+      <link>https://jobboard.example/jobs/business-development-intern-confidential</link>
+      <description><![CDATA[<p>Our client, a leading firm, is hiring business development interns for a fast-growing team. Great pay, flexible hours and quick promotion for the right students. Interested candidates should DM for details and share their profile today.</p>]]></description>
+    </item>
+  </channel>
+</rss>

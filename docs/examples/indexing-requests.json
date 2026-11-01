@@ -1,0 +1,37 @@
+[
+  {
+    "url": "https://jobs.example.com/job/software-engineering-intern-paid-at-northwind-telecom-city-b-country-a/",
+    "type": "URL_UPDATED",
+    "at": "2026-11-01T22:59:26.773Z"
+  },
+  {
+    "url": "https://jobs.example.com/job/graduate-trainee-network-operations-at-northwind-telecom-city-a-country-a/",
+    "type": "URL_UPDATED",
+    "at": "2026-11-01T22:59:26.776Z"
+  },
+  {
+    "url": "https://jobs.example.com/job/marketing-intern-at-saffron-hill-foods-city-a-country-a/",
+    "type": "URL_UPDATED",
+    "at": "2026-11-01T22:59:26.781Z"
+  },
+  {
+    "url": "https://jobs.example.com/job/management-trainee-officer-at-kitebrook-bank-city-c-country-a/",
+    "type": "URL_UPDATED",
+    "at": "2026-11-01T22:59:26.785Z"
+  },
+  {
+    "url": "https://jobs.example.com/job/software-developer-intern-at-kestrelway-logistics-city-c-country-a/",
+    "type": "URL_UPDATED",
+    "at": "2026-11-01T22:59:26.789Z"
+  },
+  {
+    "url": "https://jobs.example.com/job/sales-trainee-at-riverbend-textiles-city-a-country-a/",
+    "type": "URL_UPDATED",
+    "at": "2026-11-01T22:59:26.792Z"
+  },
+  {
+    "url": "https://jobs.example.com/job/graduate-engineer-trainee-at-harbor-example-engineering-city-d-country-b/",
+    "type": "URL_UPDATED",
+    "at": "2026-11-01T22:59:26.795Z"
+  }
+]
