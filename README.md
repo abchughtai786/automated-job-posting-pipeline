@@ -1,8 +1,21 @@
 # Automated Job Posting Pipeline
 
+[![Tests](https://github.com/abchughtai786/automated-job-posting-pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/abchughtai786/automated-job-posting-pipeline/actions/workflows/main.yml)
+![Node.js 22+](https://img.shields.io/badge/node-22%2B-339933?logo=node.js&logoColor=white)
+![Dependencies: none](https://img.shields.io/badge/dependencies-none-blue)
+
 A Node.js project that automatically finds entry-level jobs and internships, filters out bad or fake listings, and publishes them to a job website.
 
 This is a demo version. It runs on sample data and does not publish anything for real.
+
+## Highlights
+
+- 🛡️ **Fails safe**: if the AI check breaks, the job is held for review, never published unchecked
+- 🚫 **Catches scams**: fees, bank-detail requests, vague recruiters, cut-off and region-locked listings
+- 🔁 **No double posts**: duplicates are caught even when reworded or posted on another site
+- 🔒 **Secure by design**: protected against script injection, fake links, prompt injection and slow-down input
+- ♻️ **Crash-safe**: progress is saved after every job, so a restart never repeats work
+- ✅ **47 automated tests**, run on every update with GitHub Actions
 
 ## How it works
 
@@ -16,14 +29,27 @@ This is a demo version. It runs on sample data and does not publish anything for
 8. **Notify search engines**: submits the new page for indexing (simulated in the demo).
 9. **Handle errors**: retries failed jobs and sends problem jobs for manual review.
 
-## Features
+```mermaid
+flowchart LR
+    A[Career pages] --> C[Collect]
+    B[Job-board RSS] --> C
+    C --> D{Screen<br/>rules + AI}
+    D -- rejected --> X[Skipped:<br/>scam, senior,<br/>incomplete]
+    D -- AI failed --> R[Manual review]
+    D -- passed --> E[Remove<br/>duplicates]
+    E --> F[Rank]
+    F --> G[Generate<br/>job page]
+    G --> H[Publish]
+    H --> I[Notify search<br/>engines]
+    H -- failed 3 times --> S[Stuck list]
 
-- AI screening that never lets a job through if the AI check fails
-- Duplicate detection across different sources
-- Smart ranking and daily posting limits
-- Protection against unsafe input (script injection, fake links, prompt injection)
-- Safe demo mode: nothing is really published
-- 47 automated tests
+    classDef ok fill:#d1f7d6,stroke:#2da44e,color:#0b3d17
+    classDef bad fill:#ffe1e0,stroke:#cf222e,color:#5c0a0a
+    classDef warn fill:#fff4d6,stroke:#bf8700,color:#4d3800
+    class H,I ok
+    class X bad
+    class R,S warn
+```
 
 ## Tech stack
 
