@@ -11,6 +11,7 @@
   },
   "engines": { "node": ">=22" },
   "keywords": ["automation", "job-board", "wordpress", "llm", "groq", "pipeline"],
-  "license": "UNLICENSED",
+  "author": "Ahsan Baig Chughtai",
+  "license": "MIT",
   "private": true
 }

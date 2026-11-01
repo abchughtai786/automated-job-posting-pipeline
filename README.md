@@ -3,6 +3,7 @@
 [![Tests](https://github.com/abchughtai786/automated-job-posting-pipeline/actions/workflows/main.yml/badge.svg)](https://github.com/abchughtai786/automated-job-posting-pipeline/actions/workflows/main.yml)
 ![Node.js 22+](https://img.shields.io/badge/node-22%2B-339933?logo=node.js&logoColor=white)
 ![Dependencies: none](https://img.shields.io/badge/dependencies-none-blue)
+[![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 
 A Node.js project that automatically finds entry-level jobs and internships, filters out bad or fake listings, and publishes them to a job website.
 
@@ -79,3 +80,7 @@ A job page generated from a job-board listing:
 ## Author
 
 **Ahsan Baig Chughtai** · [GitHub](https://github.com/abchughtai786)
+
+## License
+
+[MIT](LICENSE) © 2026 Ahsan Baig Chughtai
