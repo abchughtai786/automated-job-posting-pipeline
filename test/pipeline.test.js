@@ -112,7 +112,7 @@ test('generated pages have structured content, and every published page is submi
     assert.match(html, /<meta name="description" content="[^"]{40,}">/);
     assert.match(html, /<h3>Responsibilities<\/h3><ul><li>/);
     assert.match(html, /<h3>Requirements<\/h3><ul><li>/);
-    assert.match(html, /<a href="https:\/\/jobboard\.example\/jobs\/sales-trainee-riverbend-textiles">/);
+    assert.match(html, /<a href="https:\/\/jobboard\.example\/jobs\/sales-trainee-riverbend-textiles" rel="nofollow ugc noopener">/);
 
     const record = JSON.parse(fs.readFileSync(path.join(config.outputDir, 'posts', `${slug}.json`), 'utf8'));
     assert.deepEqual(record.jobTypes, ['entry-level', 'full-time']);

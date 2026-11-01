@@ -16,6 +16,12 @@ const { escapeHtml } = require('../parsing/sanitize');
 function createWordPressPublisher(config) {
   const { baseUrl, username, appPassword } = config.wordpress;
   if (!baseUrl || !username || !appPassword) throw new Error('WordPress publisher needs WP_BASE_URL, WP_USERNAME and WP_APP_PASSWORD');
+  // The application password is sent with every request, so it must never
+  // travel unencrypted (plain http is allowed only for a local test site).
+  const { protocol, hostname } = new URL(baseUrl);
+  if (protocol !== 'https:' && !['localhost', '127.0.0.1', '::1', '[::1]'].includes(hostname)) {
+    throw new Error('WP_BASE_URL must use https:// (plain http would send the password unencrypted)');
+  }
   const auth = 'Basic ' + Buffer.from(`${username}:${appPassword}`).toString('base64');
   const parseTerms = (name, raw) => {
     try {

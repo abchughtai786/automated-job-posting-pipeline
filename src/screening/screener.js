@@ -70,7 +70,7 @@ function createScreener({ ai, store, log, minGapMs = 2000, cooldownMs = 60_000, 
 
   async function clearFailures(key) {
     const failures = (await store.getItem(FAILURES_KEY)) || {};
-    if (!(key in failures)) return;
+    if (!Object.hasOwn(failures, key)) return;
     delete failures[key];
     await store.setItem(FAILURES_KEY, failures);
   }
@@ -79,7 +79,7 @@ function createScreener({ ai, store, log, minGapMs = 2000, cooldownMs = 60_000, 
   // many attempts park it for a human. Always returns false (not accepted).
   async function holdOrEscalate(job, key, reason) {
     const failures = (await store.getItem(FAILURES_KEY)) || {};
-    const attempts = (failures[key] || 0) + 1;
+    const attempts = (Object.hasOwn(failures, key) ? failures[key] : 0) + 1;
     if (attempts < maxAiFailures) {
       failures[key] = attempts;
       await store.setItem(FAILURES_KEY, failures);
@@ -119,7 +119,8 @@ function createScreener({ ai, store, log, minGapMs = 2000, cooldownMs = 60_000, 
     }
 
     const key = eligibilityKey(job);
-    const cached = ((await store.getItem(CACHE_KEY)) || {})[key];
+    const cache = (await store.getItem(CACHE_KEY)) || {};
+    const cached = Object.hasOwn(cache, key) ? cache[key] : undefined;
     if (cached && now() - cached.at < CACHE_TTL_MS) {
       stats.cached += 1;
       return cached.pass;

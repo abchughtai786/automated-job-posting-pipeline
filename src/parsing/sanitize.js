@@ -33,7 +33,7 @@ function sanitizeHtml(html) {
       if (slash) return `</${n}>`;
       if (n === 'a') {
         const href = safeLinkUrl((attrs.match(/href\s*=\s*"([^"]*)"/i) || [])[1]);
-        return href ? `<a href="${escapeHtml(href)}">` : '<a>';
+        return href ? `<a href="${escapeHtml(href)}" rel="nofollow ugc noopener">` : '<a>';
       }
       return `<${n}>`;
     });

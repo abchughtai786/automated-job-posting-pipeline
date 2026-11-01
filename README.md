@@ -23,7 +23,7 @@ This is a demo version. It runs on sample data and does not publish anything for
 - Smart ranking and daily posting limits
 - Protection against unsafe input (script injection, fake links, prompt injection)
 - Safe demo mode: nothing is really published
-- 41 automated tests
+- 47 automated tests
 
 ## Tech stack
 

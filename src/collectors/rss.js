@@ -9,7 +9,7 @@
 const fs = require('fs');
 const path = require('path');
 const { ENTRY_LEVEL_RE } = require('../taxonomy');
-const { sanitizeUnicodeText } = require('../parsing/sanitize');
+const { sanitizeUnicodeText, safeLinkUrl } = require('../parsing/sanitize');
 
 function decode(s) {
   return s
@@ -55,7 +55,8 @@ async function collectRss({ samplesDir, country, screener }) {
   const candidates = parseRss(xml)
     // "Fancy" Unicode bold titles are normalised first, so they match the filters.
     .map((i) => ({ ...i, title: sanitizeUnicodeText(i.title) }))
-    .filter((i) => ENTRY_LEVEL_RE.test(i.title) && i.link)
+    // Invalid apply links are dropped before screening, so no AI call is spent on them.
+    .filter((i) => ENTRY_LEVEL_RE.test(i.title) && safeLinkUrl(i.link))
     .map((i) => ({
       title: i.title,
       company: i.company || 'Unknown',

@@ -26,7 +26,16 @@ function createMockIndexer({ outputDir }) {
 }
 
 function createGoogleIndexer({ keyPath }) {
-  const key = JSON.parse(fs.readFileSync(keyPath, 'utf8'));
+  // The error never echoes file content: a wrong path could point at a private key.
+  let key;
+  try {
+    key = JSON.parse(fs.readFileSync(keyPath, 'utf8'));
+  } catch {
+    throw new Error('GOOGLE_INDEXING_KEY_PATH must point to a readable service-account JSON file');
+  }
+  if (typeof key?.client_email !== 'string' || typeof key?.private_key !== 'string') {
+    throw new Error('GOOGLE_INDEXING_KEY_PATH file is missing client_email or private_key');
+  }
   const b64 = (x) => Buffer.from(x).toString('base64url');
   let token = null;
   let tokenExpires = 0;

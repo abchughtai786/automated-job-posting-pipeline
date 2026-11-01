@@ -11,7 +11,7 @@ const { splitLocation } = require('../taxonomy');
 // Plain-text descriptions become paragraphs; short "Heading:" lines become
 // <h3> and bullet lines become lists, so sections are machine-readable.
 function toPostContent(job) {
-  if (/<[a-z][\s\S]*>/i.test(job.description || '')) return sanitizeHtml(job.description) + applyLinkParagraph(job.url);
+  if (/<[a-z][^<>]*>/i.test(job.description || '')) return sanitizeHtml(job.description) + applyLinkParagraph(job.url);
   const blocks = (job.description || '').split(/\n{2,}/).map((b) => b.trim()).filter(Boolean);
   const html = blocks.map((block) => {
     const lines = block.split('\n').map((l) => l.trim()).filter(Boolean);
@@ -32,7 +32,8 @@ function toPostContent(job) {
 
 function applyLinkParagraph(url) {
   const href = safeLinkUrl(url);
-  return href ? `\n<p><strong>Apply:</strong> <a href="${escapeHtml(href)}">${escapeHtml(href)}</a></p>` : '';
+  // Links come from third-party listings: no ranking credit, no opener access.
+  return href ? `\n<p><strong>Apply:</strong> <a href="${escapeHtml(href)}" rel="nofollow ugc noopener">${escapeHtml(href)}</a></p>` : '';
 }
 
 async function generateJobContent(job, { ai, country }) {
